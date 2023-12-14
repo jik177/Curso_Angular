@@ -1,0 +1,60 @@
+<!--
+    <<<<<<<<<<<<<<<<<< ANGULAR >>>>>>>>>>>>>>>>>>>>
+    * Basicamente hemos comprobado como FrameWork js permite crear
+    estas miticas o nuevas Single Page Aplication (Spa´s)
+    Usa como estrategia principal la proyeccion de nuestros component
+    a una sola visualizacion. Haciendolo mas eficiente, rapido y eficaz
+    *Herramientas,necesarias:
+    ->Navegador/Browser localhost: 4200
+    ->Editor de codigio: Visual Studio Code (js, ts, css, ...)
+    ->node.js: Motor de librerias de js, accediendo a ellas a traves de los
+    recursos de NPM
+    ->Angular Cli, un set de herramientas que configura y facilita la 
+    construccion y ejecucion de angular
+    app.component.html = NUESTRA PLANTILLA INICIAL DEL COMPONENTE = TEMPLATE
+-->
+<nav class="navbar navbar-expand-lg bg-danger fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bienvenidos a:{{curso}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Router Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Instalacion
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Configuraciones Previas</a></li>
+            <li><a class="dropdown-item" href="#">Directivas de arquitectura</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Inyecciones de otros FrameWorks</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">OTROS</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!--
+    <app-header></app-header> Abriremos un componente que se llamará header
+    <app-navbar></app-navbar> otro navbar [ng generate component navbar]
+  -->
+<app-principal></app-principal><br>
+<app-secundario></app-secundario>
+<!--
+    <app-footer></app-footer> y otro footer
+  -->
