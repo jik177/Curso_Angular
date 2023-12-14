@@ -1,0 +1,28 @@
+.verde{
+    background-color: rgb(125, 185, 125);
+    color: aliceblue;
+
+}
+.rojo{
+    background-color: rgb(195, 116, 116);
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+
+}
+hr{
+color: silver;
+height: 8px;
+border-radius: 10px;
+box-shadow: 2px 5px 8px slategrey;
+}
+h2{
+    text-align: center;
+}
+.resaltar{
+    font-size: large;
+    font-weight:bold;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 4px 8px silver;
+}
