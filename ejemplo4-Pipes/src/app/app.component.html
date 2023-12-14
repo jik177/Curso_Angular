@@ -1,0 +1,85 @@
+<div class="container">
+
+  <h2 class="display-3">EJEMPLOS PIPES</h2>
+  <p>
+    Elementos asociados y/o de referencia que usaremos en entornos
+          de html, con referencia al DOM. 
+          Su naturaleza principal como recibe un elemento de entrada y como
+          formateará la presentacion de dicho elemento en el template. 
+          Angular como otros frameWorks, o lenguajes tienes sus propios pipes
+  </p>
+  
+  <!--
+                    =====
+                    PIPES
+                    =====
+          Elementos asociados y/o de referencia que usaremos en entornos
+          de html, con referencia al DOM. 
+          Su naturaleza principal como recibe un elemento de entrada y como
+          formateará la presentacion de dicho elemento en el template. 
+          Angular como otros frameWorks, o lenguajes tienes sus propios pipes
+          Sintaxis:
+          {{variable | pipe}}
+  -->
+  <h3>Pipes de texto</h3>
+  <ul class="list-group">
+  <li>Sin formato {{texto}}</li>
+  <li>Formato en minuscula: {{texto | lowercase}} </li>  
+  <li>Formato en mayúscula: {{texto | uppercase}}</li>
+  <li>Formato de titulo: {{texto | titlecase}}</li>
+  </ul>
+  <hr>
+  <h3>Pipes numericos</h3>
+  <ul >
+  <li>sin formato: {{numero}}</li>
+  <li>Muestra decimales 4: {{numero | number:'.4-4'}}</li>
+  <li>Muestra decimales 2:{{numero |number:'.1-1'}}</li>
+  <li>Total de digitos y acotacion de decimales:{{numero | number:'15.6-6'}}</li>
+  </ul>
+  <hr>
+  <h3>Pipes Porcentaje</h3>
+  <ul class="list-group">
+    <li>Sin formato:{{porcentaje}} </li>
+    <li>Porcentaje: {{porcentaje | percent}}</li><!--Ojo al redondedo-->
+    <li>Porcentaje, definiendo decimales: {{porcentaje | percent: '.1'}} </li>
+    <li>Porcentaje, definiendo decimales: {{porcentaje | percent: '3.2-2'}} </li>
+  </ul>
+    <hr>
+  <h3>Pipes Moneda</h3>
+  <ul>
+  
+    <li>Sin formato{{numero}}</li>
+    <li>Formato: {{numero | currency}}</li>
+    <li>Formato Euro simbolo:  {{numero |currency:'EUR':'symbol'}}</li><!--Podemos añadir :'symbol'-->
+    <li>Formato Euro grafia:  {{numero |currency:'EUR':'code'}}</li>
+    <li>Formato Euro + configuracion numero:  {{numero | currency:'EUR':'symbol':'6.4-4'}}</li>
+    
+  </ul>
+  <hr>
+  <h3>Pipes fecha</h3>
+  <ul class="list-group">
+  <li>Sin formato: {{fecha}}</li>
+  <li>Con formato corto hora y fecha:  {{fecha | date:'short'}}</li>
+  <li>Con formato total: {{fecha | date:'full'}}</li>
+  <li>Con formato corto fecha:  {{fecha | date:'shortDate'}}</li>
+  <li>Con formato corto hora:  {{fecha | date:'shortTime'}}</li>
+  <li>Formato personalizado fecha [Mediterraneo]: {{fecha | date:'dd/MM/yyyy'}} </li>
+  <li>Con formato personalizado hora:  {{fecha | date:'HH:mm:ss'}}</li>
+  </ul>
+  <hr>
+  <h3>Pipes Objetos json</h3>
+  <ul>
+    <li>sin formato {{jsonObject}}</li>
+    <li>Con formato json: {{jsonObject | json}}</li>
+    <li>Accediendo al elemento: {{jsonObject.nombre}}</li><!--Enmascaramiento for in-->
+    <li>
+      <pre>
+        Con formato de origen:  {{jsonObject | json}}
+      </pre>
+    </li>
+  </ul>
+  
+  
+  
+  
+  </div>
